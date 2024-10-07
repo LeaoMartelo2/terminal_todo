@@ -1,6 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 set -xe
 
+flags=-lncurses
 
-gcc main.c -o ttodo
+rm -f ttodo
+
+gcc main.c $flags -o ttodo
